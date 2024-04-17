@@ -1,15 +1,17 @@
 nav{
     height: 40px;
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom:  #d9dcdd85 solid 1px;
 
 }
 
 #carousel{
-    color: aliceblue;
-    width: 100%;
+    color: #d9dcdd85;
+    font-weight: bold;
+    width: 90%;
     text-align: center;
 }

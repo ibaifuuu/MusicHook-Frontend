@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarHorizontalComponent } from './navbar-horizontal/navbar-horizontal.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
       HeaderComponent,
-      NavbarHorizontalComponent
+      NavbarHorizontalComponent,
+      CategoriaComponent
    ],
   imports: [
     BrowserModule,

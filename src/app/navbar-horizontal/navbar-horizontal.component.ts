@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-horizontal.component.css']
 })
 export class NavbarHorizontalComponent implements OnInit {
-  genres = ['Rock', 'Pop', 'Rap', 'Electrónica', 'Clásica', 'Jazz', 'Reggae', 'Country', 'Indie', 'Blues', 'Metal', 'Folk', 'R&B', 'Alternativa'];
+  genres = ['Rap', 'R&B', 'Hip-hop', 'Reggaeton', 'Dancehall', 'Grime', 'Afrobeat', 'Soca', 'Funk', 'Soul', 'Dance', 'House']
   
   slickConfig = {
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false
   };
