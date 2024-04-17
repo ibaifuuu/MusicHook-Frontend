@@ -1,0 +1,10 @@
+nav{
+    height: 10%;
+    border: solid red 2px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
