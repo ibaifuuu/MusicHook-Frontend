@@ -1,10 +1,15 @@
 nav{
-    height: 10%;
-    border: solid red 2px;
+    height: 40px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#carousel{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
 }

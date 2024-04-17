@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarHorizontalComponent } from './navbar-horizontal/navbar-horizontal.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [			
@@ -14,7 +15,8 @@ import { NavbarHorizontalComponent } from './navbar-horizontal/navbar-horizontal
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

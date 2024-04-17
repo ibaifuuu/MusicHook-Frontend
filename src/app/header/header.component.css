@@ -3,7 +3,7 @@ header{
     flex-direction: row;
     text-align: center;
     height: 10%;
-    border-bottom:  #203036 solid 1px;
+    border-bottom:  #d9dcdd85 solid 1px;
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
@@ -43,11 +43,13 @@ input{
 }
 
 button{
+    width: 10%;
     background-color: rgba(15, 96, 163, 0.678);
     height: 40px;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
-
+    font-size: 0.87rem;
+    font-weight: bold;
 }

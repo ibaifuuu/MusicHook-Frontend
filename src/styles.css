@@ -4,6 +4,7 @@ body{
     font-family: "Roboto", sans-serif;
     background-color: #0b1416;
     height: 100%;
+    padding-top: 0%;
 }
 
 a,input,button,li,ul{
