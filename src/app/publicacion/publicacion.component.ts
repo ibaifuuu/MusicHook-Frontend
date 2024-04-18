@@ -1,26 +1,26 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { ScreenSizeService } from '../servicios/ScreenSize.service';
 
 @Component({
   selector: 'app-publicacion',
   templateUrl: './publicacion.component.html',
   styleUrls: ['./publicacion.component.css']
 })
+
 export class PublicacionComponent implements OnInit {
   @Input() imagenUsuario: string="";
   @Input() nombreUsuario: string="";
   @Input() textoPublicacion: string="";
-  
+  @Input() categoria:string = "";
+ 
   mobileView: boolean = false;
 
-  constructor() { }
+  constructor(private screenSize: ScreenSizeService) { }
 
   ngOnInit() {
-    this.onResize(); // Llama a onResize cuando se inicia el componente para establecer mobileView inicialmente
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event?: Event) {
-    this.mobileView = window.innerWidth <= 1200; // Cambiar este valor según tus necesidades de diseño responsivo
-  }
+    this.screenSize.isMobile().subscribe(isMobile => {
+      this.mobileView = isMobile;
+  });
+}
 
 }

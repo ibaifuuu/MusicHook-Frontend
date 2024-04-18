@@ -5,11 +5,21 @@ h3{
     font-weight: 400;
 }
 
+h4{
+    font-size: small;
+    background-color: var(--color-boton-categoria);
+    padding: 7px;
+    border-radius: 10%;
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
 article{
     width: 70%;
     border-top: 1px solid rgba(255, 255, 255, 0.397);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
-
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.397); */
     margin: auto;
 
 }
@@ -30,7 +40,6 @@ article{
 
 .informacion-post img{
     position: absolute;
-    border: 1px solid grey;
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -58,7 +67,6 @@ article{
     padding-right: 30px;
     padding-left: 30px;
     word-spacing: 5px;
-    margin-bottom: 3%;
     margin-top: 0%;
     font-weight: bold;
     font-size: large;
@@ -66,4 +74,12 @@ article{
 
 .articleMobile{
     width: 100%;
+}
+
+.categoria{
+    width: 95%;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+
 }

@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { ScreenSizeService } from '../servicios/ScreenSize.service';
 
 @Component({
   selector: 'app-header',
@@ -9,16 +10,12 @@ export class HeaderComponent implements OnInit {
 
   mobileView:boolean = false;
 
-  constructor() { }
+  constructor(private screenSize: ScreenSizeService) { }
 
   ngOnInit() {
+    this.screenSize.isMobile().subscribe(isMobile => {
+      this.mobileView = isMobile;
+    });
   }
-
-
   
-  @HostListener('window:resize', ['$event'])
-  onResize(event:Event) {
-    this.mobileView = window.innerWidth <= 1200; // Cambiar este valor según tus necesidades de diseño responsivo
-  }
-
 }

@@ -1,8 +1,19 @@
-<section>
-  <h1>Post sobre {{nombreCategoria}}</h1>
-    <app-publicacion 
+  <section>
+    <h1>Post sobre {{nombreCategoria}}</h1>
+      <app-publicacion 
+      [imagenUsuario]="'../../assets/img/thispersondoesnotexist.jpg'"
+      [nombreUsuario]="'Ramses Allah Comecerdo'"
+      [textoPublicacion]="'El rap surgió en los años 70 en Nueva York, como una forma de expresión de la cultura urbana y afroamericana. Se caracteriza por rimas, ritmo y lírica hablada sobre bases musicales. Ha evolucionado globalmente, reflejando realidades sociales y políticas.'">
+    </app-publicacion>
+    <app-publicacion
+    [imagenUsuario]="'../../assets/img/thispersondoesnotexist.jpg'"
+    [nombreUsuario]="'Ramses Allah Comecerdo'"
+    [textoPublicacion]="'El rap surgió en los años 70 en Nueva York, como una forma de expresión de la cultura urbana y afroamericana. Se caracteriza por rimas, ritmo y lírica hablada sobre bases musicales. Ha evolucionado globalmente, reflejando realidades sociales y políticas.'"
+    [categoria]="nombreCategoria">
+    </app-publicacion>
+    <app-publicacion
     [imagenUsuario]="'../../assets/img/thispersondoesnotexist.jpg'"
     [nombreUsuario]="'Ramses Allah Comecerdo'"
     [textoPublicacion]="'El rap surgió en los años 70 en Nueva York, como una forma de expresión de la cultura urbana y afroamericana. Se caracteriza por rimas, ritmo y lírica hablada sobre bases musicales. Ha evolucionado globalmente, reflejando realidades sociales y políticas.'">
-  </app-publicacion>
-</section>
+    </app-publicacion>
+  </section>  

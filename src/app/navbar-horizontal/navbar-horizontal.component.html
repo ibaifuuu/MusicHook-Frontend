@@ -1,5 +1,5 @@
 <nav>
-  <ngx-slick-carousel id="carousel" #slickModal="slick-carousel" [config]="slickConfig">
+  <ngx-slick-carousel ngClass="{'carouselMobile': mobileView}" id="carousel" #slickModal="slick-carousel" [config]="slickConfig">
     <div ngxSlickItem class="slide" *ngFor="let genre of genres">
       <a href="">{{ genre }}</a>
     </div>

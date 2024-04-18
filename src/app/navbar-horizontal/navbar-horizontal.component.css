@@ -6,12 +6,17 @@ nav{
     justify-content: center;
     align-items: center;
     border-bottom:  #d9dcdd85 solid 1px;
-
+    z-index: 10;
 }
 
 #carousel{
     color: #d9dcdd85;
     font-weight: bold;
-    width: 90%;
+    width: 80%;
     text-align: center;
+}
+
+.carouselMobile{
+    margin-left: 5%;
+    margin-right: 5%;
 }
