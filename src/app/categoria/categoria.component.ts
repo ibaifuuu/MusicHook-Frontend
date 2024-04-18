@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -17,5 +17,6 @@ export class CategoriaComponent implements OnInit {
       this.nombreCategoria = params.get("nombre") || ""; // Actualizamos el valor con el parámetro de la URL      // Aquí podrías cargar los datos específicos de la categoría, por ejemplo, desde un servicio.
     });
   }
+
 
 }

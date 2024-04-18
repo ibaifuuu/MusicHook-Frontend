@@ -1,20 +1,8 @@
 <section>
-  <h2>Posts sobre {{nombreCategoria}}</h2>
-  <article>
-    <div class="informacion-post">
-      <div class="logo">
-        <img src="../../assets/img/thispersondoesnotexist.jpg" alt="foto-usuarios">
-      </div>
-      <div>
-        <h3>EL RAP COMO FORMA DE VIDA EN LAS AZORES</h3>
-      </div>
-      <!-- <div class="fecha">
-        100/08/2015
-      </div> -->
-    </div>
-    <div class="contenido">
-      <p>El rap surgió en los años 70 en Nueva York, como una forma de expresión de la cultura urbana y afroamericana. Se caracteriza por rimas, ritmo y lírica hablada sobre bases musicales. Ha evolucionado globalmente, reflejando realidades sociales y políticas.</p>
-    </div>
-
-  </article>
+  <h1>Post sobre {{nombreCategoria}}</h1>
+    <app-publicacion 
+    [imagenUsuario]="'../../assets/img/thispersondoesnotexist.jpg'"
+    [nombreUsuario]="'Ramses Allah Comecerdo'"
+    [textoPublicacion]="'El rap surgió en los años 70 en Nueva York, como una forma de expresión de la cultura urbana y afroamericana. Se caracteriza por rimas, ritmo y lírica hablada sobre bases musicales. Ha evolucionado globalmente, reflejando realidades sociales y políticas.'">
+  </app-publicacion>
 </section>

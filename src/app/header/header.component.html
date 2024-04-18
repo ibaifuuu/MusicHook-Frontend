@@ -1,7 +1,9 @@
 <header>
     <h1><a href="">UrbanHook</a></h1>
-    <form action="/search" method="get">
+    <form action="/search" method="get" *ngIf="!mobileView">
         <input type="text" name="q" placeholder="Buscar en UrbanHook">
     </form>
-    <button>Iniciar sesión</button>
+    <button *ngIf="!mobileView">Iniciar sesión</button>
+    <button *ngIf="mobileView">buscar</button>
+    <button *ngIf="mobileView">ajustes</button>
 </header>
